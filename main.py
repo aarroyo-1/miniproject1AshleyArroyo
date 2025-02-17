@@ -17,16 +17,29 @@ integrity statement may result in consequences, including disciplinary actions a
 #Imports
 import pprint
 import yfinance as yf
+import numpy as np
+import matplotlib.pyplot as plt
 
 #tickers Amazon, Spotify, Ebay, Google, Microsoft
 mytickers = ["AMZN", "SPOT", "EBAY", "GOOG", "MSFT"]
 
-mydata = {}
 
 mytickers.sort()
 for ticker in mytickers:
     result = yf.Ticker(ticker)
-    mydata[ticker] = {'ticker': ticker,
-                      'dayHigh': result.info['dayHigh']
-                        }
-pprint.pprint(mydata)
+    hist = result.history(period="10d")
+    last10days =[]
+    for date in hist["Close"][:10]:
+        last10days.append(date)
+    if len(last10days) ==10:
+        myarray = np.array(last10days)
+        max_price = np.max(last10days)
+        min_price = np.min(last10days)
+        plt.plot(myarray)
+        plt.xlabel('Days Ago')
+        plt.axis((9, 0, min_price, max_price))
+        plt.ylabel('The Closing Price')
+        plt.title(f"{ticker} Last 10 Days Price")
+        plt.show()
+    else:
+        print(f"Do not have 10 days of data. Only have {len(last10days)} days.")
