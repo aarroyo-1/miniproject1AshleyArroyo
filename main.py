@@ -15,7 +15,6 @@ integrity statement may result in consequences, including disciplinary actions a
 '''
 
 #Imports
-import pprint
 import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -33,8 +32,8 @@ for ticker in mytickers:
         last10days.append(date)
     if len(last10days) ==10:
         myarray = np.array(last10days)
-        max_price = np.max(last10days)
-        min_price = np.min(last10days)
+        max_price = myarray.max() + (myarray.max()*.05)
+        min_price = myarray.min() - (myarray.min()*.05)
         plt.plot(myarray)
         plt.xlabel('Days Ago')
         plt.axis((9, 0, min_price, max_price))
