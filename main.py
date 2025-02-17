@@ -4,7 +4,7 @@
 
 '''
 INF601 - Programming in Python
-Assignment #
+Assignment 1
 I,  Ashley Guadalupe Tarin Arroyo , affirm that the work submitted for this assignment is entirely my own.
 I have not engaged in any form of academic dishonesty, including but not limited to cheating, plagiarism,
 or the use of unauthorized materials. I have neither provided nor received unauthorized assistance and have
