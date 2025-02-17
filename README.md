@@ -17,37 +17,29 @@ This project will use the packages NumPy and Matplotlib in order to create 5 gra
 pip install -r requirements.txt
 ```
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+How to run the program
+* The <ins>code</ins> below should run the python file.
 ```
-code blocks for commands
+python main.py
 ```
 
-## Help
+## Output
 
-Any advise for common problems or issues.
+This should create five graphs in charts/ folder for each of the five chosen stocks.
+The five stocks are **Amazon, Ebay, Google, Microsoft, and Spotify**!
 ```
 command to run if program contains helper info
 ```
 
-## Authors
+## Author & Contact Information
 
-Contributors names and contact info
 
-ex. Ashley Guadalupe Tarin Arroyo
+Author: Ashley Guadalupe Tarin Arroyo
+Contact Info: ~~Not available~~
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [profzeller](https://github.com/profzeller/miniproject1)
