@@ -29,15 +29,13 @@ python main.py
 
 This should create five graphs in charts/ folder for each of the five chosen stocks.
 The five stocks are **Amazon, Ebay, Google, Microsoft, and Spotify**!
-```
-command to run if program contains helper info
-```
+
 
 ## Author & Contact Information
 
 
-Author: Ashley Guadalupe Tarin Arroyo
-Contact Info: ~~Not available~~
+* Author: Ashley Guadalupe Tarin Arroyo
+* Contact Info: ~~Not available~~
 
 ## Acknowledgments
 
