@@ -18,7 +18,10 @@ integrity statement may result in consequences, including disciplinary actions a
 import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
+
+os.makedirs("charts", exist_ok=True)
 
 mytickers = ["AMZN", "SPOT", "EBAY", "GOOG", "MSFT"]
 
