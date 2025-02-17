@@ -39,6 +39,6 @@ for ticker in mytickers:
         plt.axis((9, 0, min_price, max_price))
         plt.ylabel('The Closing Price')
         plt.title(f"{ticker} Last 10 Days Price")
-        plt.show()
+        plt.savefig(f"charts/{ticker}.png")
     else:
         print(f"Do not have 10 days of data. Only have {len(last10days)} days.")
